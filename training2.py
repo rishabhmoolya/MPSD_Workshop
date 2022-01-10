@@ -22,11 +22,12 @@ def fall_time(h):
     return t
 
 
-# =============================================================================
-# def interval_point(a, b, x):
-#     """ It returns how far to go towards b starting at a """
-#     return
-# =============================================================================
+def interval_point(a, b, x):
+    """ It returns how far to go towards b starting at a """
+    s = b - a
+    inter = s * x
+    return inter + a
+
 
 def impact_velocity(h):
     """It returns the velocity of an object"""
