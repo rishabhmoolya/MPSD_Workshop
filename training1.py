@@ -2,7 +2,7 @@
 """
 Created on Mon Jan 10 10:10:30 2022
 
-@author: Rishabh
+@author: Gargi, Moiunddin, Rishabh
 """
 
 def distance(a,b):
