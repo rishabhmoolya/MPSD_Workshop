@@ -3,7 +3,7 @@
 """
 Created on Mon Jan 10 17:57:50 2022
 
-@author: rishabh
+@author: Gargi, Moiunddin, Rishabh 
 """
 import math
 
