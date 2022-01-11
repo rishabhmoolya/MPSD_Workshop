@@ -10,13 +10,19 @@ import math
 
 
 def degree(x):
+<<<<<<< HEAD
     """ It takes the value in radians and returns the converted
     value in degrees."""
     theta = x * 360 / (2 * math.pi)
+=======
+    """ It takes the value in radians and returns the converted value in degrees."""
+    theta = x* 360/(2* math.pi)
+>>>>>>> e24a013ae46bfb74ca6208418f5af8e7350b0f95
     return theta
 
 
 def min_max(m):
+<<<<<<< HEAD
     """ It computes the minimum of the elements and returns the maxium value
     of the elements in the form of a tuple"""
     xmin = min(m)
@@ -29,3 +35,10 @@ def geometric_mean(xs):
     for i in range(len(xs)):
         gm = (xs[i] * xs[i + 1])**(1 / len(xs))
         return gm
+=======
+    """ It computes the minimum of the elements and returns the maxium value of the elements in the form of a tuple"""
+    m = []
+    xs  = m. min()
+    return xs
+    
+>>>>>>> e24a013ae46bfb74ca6208418f5af8e7350b0f95
