@@ -6,10 +6,10 @@ Created on Wed Jan 12 10:41:12 2022
 """
 import urllib.request
 
+
 def line_averages(filename):
     with open(filename, 'r') as f:
         lines = f.readlines()
-        #print(lines)
     for line in lines:
         s = 0
         for elem in line.split(','):
@@ -27,14 +27,12 @@ def noaa_string():
     return noaa_data_string.decode("utf-8")
 
 
-# =============================================================================
-# def noaa_temperature(s):
-#     # s = noaa_string()
-#     # lines = s.read()
-#     y = s.split()
-# #     for i in range(len(s)):
-#     if y == 'Temperature:':
-#         
-#     print(y)
-# 
-# =============================================================================
+def noaa_temperature(s):
+    y = []
+    for elem in range(len(s)):
+        y = s.split()
+        for t in y:
+            if t == "Temperature:":
+                x = y.index(t)+1
+    d = (int(y[x])-32)*(5/9)
+    return int(d)
