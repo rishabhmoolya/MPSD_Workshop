@@ -2,16 +2,17 @@
 """
 Created on Wed Jan 12 10:41:12 2022
 
-@author: Moin
+@authors: Moin, Gargi, Rishabh
 """
 import urllib.request
+import math
 
 
 def line_averages(filename):
     with open(filename, 'r') as f:
         lines = f.readlines()
     for line in lines:
-        s = 0
+        s = 0.0
         for elem in line.split(','):
             s = s + int(elem)
             avg = s/len(line.split(','))
@@ -34,5 +35,6 @@ def noaa_temperature(s):
         for t in y:
             if t == "Temperature:":
                 x = y.index(t)+1
+    print(y[x])
     d = (int(y[x])-32)*(5/9)
-    return int(d)
+    return math.ceil(d)
